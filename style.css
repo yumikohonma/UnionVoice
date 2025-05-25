@@ -1,0 +1,116 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+textarea, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007acc;
+}
+
+.meta-comment {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* ログ一覧用 */
+#board {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: auto;
+  background: #f4f4f4;
+  touch-action: pan-x pan-y;
+}
+
+.node {
+  position: absolute;
+  min-width: 160px;
+  max-width: 240px;
+  padding: 15px;
+  border-radius: 20px;
+  color: #333;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  font-size: 14px;
+  cursor: pointer;
+  word-break: break-word;
+  background-color: #eeeeee;
+  transition: transform 0.2s ease;
+}
+
+.like-btn {
+  margin-top: 8px;
+  font-size: 12px;
+  background: #607d8b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  textarea, select {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .node {
+    font-size: 12px !important;
+    padding: 10px !important;
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Union Voice - はじめに</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Union Voice</h1>
+    <div class="step">
+      <p>このアプリは、職場の課題を団体交渉の材料として整理するための対話型アプリです。</p>
+      <label><input type="checkbox" class="agree"> 読みました</label>
+    </div>
+    <div class="step" style="display:none;">
+      <p>投稿は匿名で保存され、組合員・組合執行部・会社役員が閲覧できるログとして共有されます。</p>
+      <label><input type="checkbox" class="agree"> 読みました</label>
+    </div>
+    <div class="step" style="display:none;">
+      <p>対話を通して、個人の不満が全体的な問題として見えてくることを目指しています。</p>
+      <label><input type="checkbox" class="agree"> 読みました</label>
+    </div>
+    <button id="nextBtn" disabled>入力を始める</button>
+  </div>
+   <!-- 追加：ログを見るボタン -->
+    <div style="margin-top: 20px; text-align: center;">
+      <a href="log.html" class="log-button">みんなの投稿ログを見る</a>
+    </div>
+  <script src="script-intro.js"></script>
+</body>
+</html>
