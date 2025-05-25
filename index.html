@@ -2,33 +2,30 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Union Voice - 入力</title>
+  <title>Union Voice - はじめに</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Union Voice</h1>
-    <p id="question"></p>
-    <textarea id="answer" rows="5"></textarea>
-
-    <div id="category-box" style="display:none;">
-      <label>カテゴリ：</label>
-      <select id="category">
-        <option value="">選択してください</option>
-        <option>人間関係</option>
-        <option>業務量／労働時間</option>
-        <option>評価制度</option>
-        <option>安全衛生</option>
-        <option>ハラスメント</option>
-        <option>設備・IT</option>
-        <option>賃金・待遇</option>
-        <option>その他</option>
-      </select>
+    <div class="step">
+      <p>このアプリは、職場の課題を団体交渉の材料として整理するための対話型アプリです。</p>
+      <label><input type="checkbox" class="agree"> 読みました</label>
     </div>
-
-    <button id="next">次へ</button>
-    <a href="log.html">ログを見る</a>
+    <div class="step" style="display:none;">
+      <p>投稿は匿名で保存され、組合員・組合執行部・会社役員が閲覧できるログとして共有されます。</p>
+      <label><input type="checkbox" class="agree"> 読みました</label>
+    </div>
+    <div class="step" style="display:none;">
+      <p>対話を通して、個人の不満が全体的な問題として見えてくることを目指しています。</p>
+      <label><input type="checkbox" class="agree"> 読みました</label>
+    </div>
+    <button id="nextBtn" disabled>入力を始める</button>
   </div>
-  <script src="script-index.js"></script>
+   <!-- 追加：ログを見るボタン -->
+    <div style="margin-top: 20px; text-align: center;">
+      <a href="log.html" class="log-button">みんなの投稿ログを見る</a>
+    </div>
+  <script src="script-intro.js"></script>
 </body>
 </html>
